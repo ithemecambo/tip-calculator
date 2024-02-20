@@ -104,7 +104,6 @@ class ViewController: UIViewController {
         }.store(in: &cancellables)
         
         output.resultCalculatorPublisher.sink { [unowned self] _ in
-            print("Press on logo to reset form, please!!!")
             billInputView.reset()
             tipInputView.reset()
             splitInputView.reset()
